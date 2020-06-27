@@ -58,17 +58,19 @@ body {
 
 #navbar a:link {
   text-decoration: none;
+  color: black;
 }
 
 #rubydoc {
   font-weight: 800;
-  font-size: 18pt;
+  font-size: 20pt;
+  color: rgba(221, 31, 31, 0.746);
   text-align: center;
 }
 
 #main-doc header {
   font-size: 18pt;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #main-doc section {
@@ -77,4 +79,13 @@ body {
 
 #main-doc p {
   margin: 2rem 0;
+}
+
+@media (max-width: 361px) {
+  body {
+    flex-direction: column;
+  }
+  #main-doc li {
+    margin-left: 0;
+  }
 }
