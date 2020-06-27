@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=ß, initial-scale=1.0" />
+    <title>TECHNICAL DOCUMENTATION</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="rubydoc">Ruby Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li><a class="nav-link" href="#whyRuby">Why Ruby is popular?</a></li>
+        <li><a class="nav-link" href="#rubyExample">Basic example</a></li>
+        <li><a class="nav-link" href="#comments">Comments</a></li>
+        <li><a class="nav-link" href="#variables">Variables</a></li>
+        <li><a class="nav-link" href="#flowControl">Flow Control</a></li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+    <div id="main-doc">
+      <!-- Main section should contain at least 10 p elements -->
+      <!-- Main section should contain at least 5 code elements -->
+      <!--Main section should contain at least 5 li itmes in total-->
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          Ruby is a flexible and intuitive object-oriented programming language.
+          From modest beginnings in Japan where it rapidly gained a loyal
+          following, the popularity of Ruby has now spread throughout the
+          programming world. This surge in popularity can, in no small part, be
+          attributed to the introduction and wide adoption of the Ruby on Rails
+          framework. It is difficult, however, to get the most out of Ruby on
+          Rails without first learning something about programming in Ruby, and
+          this is where Ruby Essentials comes in.
+        </p>
+        <p>
+          Ruby Essentials is a free on-line book designed to provide a concise
+          and easy to follow guide to learning Ruby. Everything from installing
+          Ruby and the basics of the language through to topics such as arrays,
+          file handling and object-oriented programming are covered, all
+          combined with easy to understand code examples which serve to bridge
+          the gap between theory and practice. Ruby Essentials is intended to be
+          of equal use both to those experienced in other programming languages
+          and to novices who have chosen Ruby as their "first programming
+          language".
+        </p>
+      </section>
+
+      <section id="whyRuby" class="main-section">
+        <header>Why is Ruby so popular?</header>
+        <p>Ruby's popularity is based on:</p>
+        <ul>
+          <li>
+            Firstly, Ruby is a very intuitive and clean programming language.
+            This makes learning Ruby a less challenging task than learning some
+            other languages. Ruby is also a great general purpose language. It
+            can be used to write scripts in the same way you might use Perl and
+            it can be used to create full scale, standalone GUI based
+            applications. Ruby's usefulness doesn't end there however. Ruby is
+            also great for serving web pages, generating dynamic web page
+            content and excels at database access tasks.
+          </li>
+          <li>
+            Not only is Ruby intuitive and flexible it is also extensible,
+            enabling new functionality to be added through the integration
+            third-party, or even home grown libraries.
+          </li>
+          <li>
+            And, of course, being an interpreted language means that Ruby is
+            portable. Once an application has been developed in Ruby it will run
+            equally well on Ruby supported platforms such as Linux, UNIX,
+            Windows and Mac OS X.
+          </li>
+        </ul>
+      </section>
+      <section id="rubyExample" class="main-section">
+        <header>The Most Basic Ruby Example</header>
+        <p>
+          Programming guides tend to follow the tradition of using "Hello World"
+          as the first example of using a programming language. Typically such a
+          program does nothing but output the string "Hello World" to the
+          console window. Ruby Essentials is no exception to this rule, though
+          we will modify it slightly to display "Hello Ruby!". Without further
+          delay, let's get started:
+        </p>
+        <ul>
+          <li>
+            On Linux or UNIX derived operating systems:<br />
+            <code>print "Hello Ruby!\n"</code>
+          </li>
+          <li>
+            On Windows:<br />
+            <code>print "Hello Ruby!" </code>
+          </li>
+        </ul>
+        <p>
+          As you can see, all we need to do to output some text is enter a
+          single line of Ruby code. You may recall if you have read the previous
+          chapters that one of the strengths of Ruby is that it is fast and
+          intuitive to learn. Clearly it would be hard to make printing a line
+          of text any easier than a print statement followed by the text to be
+          displayed (together with a newline character '\n' on Linux and UNIX).
+          As an example, let's compare this to the equivalent code in Java:
+        </p>
+        <code>
+          import java.io.*;<br />
+          public class Hello { <br />public static void main ( String[] args) {
+          <br />System.out.println ("Hello Ruby!\n");<br />
+          }<br />
+          }
+        </code>
+      </section>
+      <section id="comments" class="main-section">
+        <header>Single Line Ruby Comments</header>
+        <p>
+          Single line comments in a Ruby script are defined with the '#'
+          character. For example, to add a single line comment to a simple
+          script:
+        </p>
+        <code>
+          # This is a comment line - it explains that the next line of code
+          displays a welcome message print "Welcome to Ruby!"
+        </code>
+        <p>Comments lines can be grouped together:</p>
+        <code>
+          # This is a comment line <br />
+          # it explains that the next line of code displays <br />
+          # a welcome message
+        </code>
+      </section>
+      <section id="variables" class="main-section">
+        <header>Variables and Assignment</header>
+        <p>
+          So far, whenever we have putsed a string or a number, the thing we
+          putsed is gone. What I mean is, if we wanted to print something out
+          twice, we would have to type it in twice:
+        </p>
+        <code>
+          puts '...you can say that again...' <br />
+          puts '...you can say that again...'
+        </code>
+        <p>
+          To store the string in your computer's memory, we need to give the
+          string a name. Programmers often refer to this process as assignment,
+          and they call the names variables. This variable can be just about any
+          sequence of letters and numbers, but the first character needs to be a
+          lowercase letter. Let's try that last program again, but this time I
+          will give the string the name myString (though I could just as well
+          have named it str or myOwnLittleString or henryTheEighth).
+        </p>
+        <code>
+          myString = '...you can say that again...' <br />
+          puts myString <br />
+          puts myString
+        </code>
+      </section>
+      <section id="flowControl" class="main-section">
+        <header>Comparison Methods</header>
+        <p>
+          Let's rush through this part so we can get to the next section,
+          Branching, where all the cool stuff happens. So, to see if one object
+          is greater than or less than another, we use the methods > and <, like
+          this:
+        </p>
+        <code>
+          puts 1 > 2 <br />
+          puts 1 < 2
+        </code>
+        <p>
+          false <br />
+          true
+        </p>
+      </section>
+      <section id="reference" class="main-section">
+        <header>Reference</header>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a href="https://www.ruby-lang.org/en/documentation/">Ruby</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

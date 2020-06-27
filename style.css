@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: black;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+#main-doc a:active {
+  color: blue;
+}
+
+#main-doc a:visited {
+  color: blue;
+}
+
+#navbar {
+  flex: 1;
+  border-right: 3px solid grey;
+}
+
+#navbar a:active {
+  color: black;
+}
+
+#navbar a:visited {
+  color: black;
+}
+
+#main-doc {
+  flex-basis: 70%;
+  margin: 3%;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar li {
+  border-top: 1px solid black;
+  margin: 5px;
+  padding: 10px 30px;
+}
+
+#main-doc li {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+#navbar a:link {
+  text-decoration: none;
+}
+
+#rubydoc {
+  font-weight: 800;
+  font-size: 18pt;
+  text-align: center;
+}
+
+#main-doc header {
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+#main-doc section {
+  margin: 2rem 0;
+}
+
+#main-doc p {
+  margin: 2rem 0;
+}
